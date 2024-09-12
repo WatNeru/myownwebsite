@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vtuber歌枠まとめ</title>
+
+    <!-- FontAwesome アイコンの導入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         /* 基本スタイル */
         body {
@@ -41,6 +45,8 @@
             font-size: 1.2em;
             margin: 0 10px;
             transition: background-color 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .tab-menu button:hover {
             background-color: #0056b3;
@@ -80,6 +86,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             transition: transform 0.3s;
+            position: relative;
         }
         .channel-item:hover, .song-item:hover {
             transform: scale(1.05);
@@ -100,9 +107,37 @@
         .channel-item a, .song-item a {
             text-decoration: none;
             color: #007bff;
+            font-size: 1.1em;
         }
         .channel-item a:hover, .song-item a:hover {
             text-decoration: underline;
+        }
+
+        /* アイコン追加 */
+        .channel-item .icon, .song-item .icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5em;
+            color: #007bff;
+        }
+
+        /* 広告枠 */
+        .ad-section {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .ad-section .ad-placeholder {
+            width: 100%;
+            max-width: 728px;
+            height: 90px;
+            background-color: #f1f1f1;
+            color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            margin: 0 auto;
         }
 
         /* フッター */
@@ -116,6 +151,36 @@
             width: 100%;
         }
 
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .channel-item, .song-item {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            .tab-menu button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .ad-placeholder {
+                height: 60px;
+                max-width: 468px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab-menu button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+
+            .ad-placeholder {
+                height: 50px;
+                max-width: 320px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -127,8 +192,8 @@
 
     <!-- タブメニュー -->
     <div class="tab-menu">
-        <button class="tab-link active" onclick="openTab(event, 'vtuber')">Vtuberから探す</button>
-        <button class="tab-link" onclick="openTab(event, 'song')">歌から探す</button>
+        <button class="tab-link active" onclick="openTab(event, 'vtuber')">Vtuberから探す <i class="fas fa-user"></i></button>
+        <button class="tab-link" onclick="openTab(event, 'song')">歌から探す <i class="fas fa-music"></i></button>
     </div>
 
     <!-- Vtuberから探すタブ -->
@@ -137,17 +202,14 @@
             <div class="channel-item">
                 <img src="vtuber1.jpg" alt="Vtuber 1">
                 <h3>Vtuberチャンネル 1</h3>
-                <a href="親サイトリンク1.html">親サイトを見る</a>
+                <a href="親サイトリンク1.html">親サイトを見る <i class="fas fa-external-link-alt"></i></a>
+                <span class="icon"><i class="fas fa-user"></i></span>
             </div>
             <div class="channel-item">
                 <img src="vtuber2.jpg" alt="Vtuber 2">
                 <h3>Vtuberチャンネル 2</h3>
-                <a href="親サイトリンク2.html">親サイトを見る</a>
-            </div>
-            <div class="channel-item">
-                <img src="vtuber3.jpg" alt="Vtuber 3">
-                <h3>Vtuberチャンネル 3</h3>
-                <a href="親サイトリンク3.html">親サイトを見る</a>
+                <a href="親サイトリンク2.html">親サイトを見る <i class="fas fa-external-link-alt"></i></a>
+                <span class="icon"><i class="fas fa-user"></i></span>
             </div>
         </div>
     </div>
@@ -158,18 +220,23 @@
             <div class="song-item">
                 <img src="song1.jpg" alt="Song 1">
                 <h3>曲名 1</h3>
-                <a href="親サイトリンクA.html">関連Vtuberを見る</a>
+                <a href="親サイトリンクA.html">関連Vtuberを見る <i class="fas fa-external-link-alt"></i></a>
+                <span class="icon"><i class="fas fa-music"></i></span>
             </div>
             <div class="song-item">
                 <img src="song2.jpg" alt="Song 2">
                 <h3>曲名 2</h3>
-                <a href="親サイトリンクB.html">関連Vtuberを見る</a>
+                <a href="親サイトリンクB.html">関連Vtuberを見る <i class="fas fa-external-link-alt"></i></a>
+                <span class="icon"><i class="fas fa-music"></i></span>
             </div>
-            <div class="song-item">
-                <img src="song3.jpg" alt="Song 3">
-                <h3>曲名 3</h3>
-                <a href="親サイトリンクC.html">関連Vtuberを見る</a>
-            </div>
+        </div>
+    </div>
+
+    <!-- Google広告枠 -->
+    <div class="ad-section">
+        <div class="ad-placeholder">
+            <!-- Google広告コードをここに挿入 -->
+            広告枠 (728x90)
         </div>
     </div>
 
@@ -197,6 +264,7 @@
 
             // 選択したタブを表示し、アクティブ状態にする
             document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
 
