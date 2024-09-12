@@ -4,125 +4,205 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7816190894013186" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>親サイト - チャンネル名</title>
+    <title>Vtuber歌枠まとめ</title>
     <style>
+        /* 基本スタイル */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
+
+        /* ヘッダー */
         header {
-            background-color: #333;
+            background-color: #343a40;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
         }
-        .container {
-            width: 90%;
-            margin: 0 auto;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        .section-title {
-            font-size: 1.5em;
+
+        /* タブメニュー */
+        .tab-menu {
+            display: flex;
+            justify-content: center;
             margin: 20px 0;
         }
-        .video-list {
+        .tab-menu button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .tab-menu button:hover {
+            background-color: #0056b3;
+        }
+        .tab-menu button.active {
+            background-color: #0056b3;
+        }
+
+        /* コンテンツ表示エリア */
+        .tab-content {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* チャンネルリスト */
+        .channel-list, .song-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
         }
-        .video-item {
-            background-color: white;
-            margin-bottom: 20px;
-            width: 30%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .channel-item, .song-item {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
             text-align: center;
-            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
         }
-        .video-item img {
-            width: 100%;
-            height: auto;
+        .channel-item:hover, .song-item:hover {
+            transform: scale(1.05);
         }
-        .video-item h3 {
-            font-size: 1.2em;
+
+        .channel-item img, .song-item img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+
+        .channel-item h3, .song-item h3 {
             margin: 10px 0;
+            font-size: 1.5em;
+            color: #343a40;
         }
-        .video-item a {
+
+        .channel-item a, .song-item a {
             text-decoration: none;
             color: #007bff;
         }
-        .video-item a:hover {
+        .channel-item a:hover, .song-item a:hover {
             text-decoration: underline;
         }
+
+        /* フッター */
         footer {
-            background-color: #333;
+            background-color: #343a40;
             color: white;
-            padding: 10px;
             text-align: center;
-            position: absolute;
-            width: 100%;
+            padding: 10px;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>チャンネル名</h1>
-        <p>最新の動画をチェックしよう！</p>
+        <h1>Vtuber歌枠まとめ</h1>
+        <p>好きなVtuberや歌で歌枠動画を見つけよう！</p>
     </header>
 
-    <div class="container">
+    <!-- タブメニュー -->
+    <div class="tab-menu">
+        <button class="tab-link active" onclick="openTab(event, 'vtuber')">Vtuberから探す</button>
+        <button class="tab-link" onclick="openTab(event, 'song')">歌から探す</button>
+    </div>
 
-        <!-- 新着動画セクション -->
-        <section>
-            <h2 class="section-title">新着動画</h2>
-            <div class="video-list">
-                <div class="video-item">
-                    <img src="video-thumbnail1.jpg" alt="Video 1 Thumbnail">
-                    <h3>動画タイトル 1</h3>
-                    <a href="子サイトリンク1.html">動画を見る</a>
-                </div>
-                <div class="video-item">
-                    <img src="video-thumbnail2.jpg" alt="Video 2 Thumbnail">
-                    <h3>動画タイトル 2</h3>
-                    <a href="子サイトリンク2.html">動画を見る</a>
-                </div>
-                <div class="video-item">
-                    <img src="video-thumbnail3.jpg" alt="Video 3 Thumbnail">
-                    <h3>動画タイトル 3</h3>
-                    <a href="子サイトリンク3.html">動画を見る</a>
-                </div>
+    <!-- Vtuberから探すタブ -->
+    <div id="vtuber" class="tab-content active">
+        <div class="channel-list">
+            <div class="channel-item">
+                <img src="vtuber1.jpg" alt="Vtuber 1">
+                <h3>Vtuberチャンネル 1</h3>
+                <a href="親サイトリンク1.html">親サイトを見る</a>
             </div>
-        </section>
-
-        <!-- 人気動画セクション -->
-        <section>
-            <h2 class="section-title">人気動画</h2>
-            <div class="video-list">
-                <div class="video-item">
-                    <img src="video-thumbnail4.jpg" alt="Video 4 Thumbnail">
-                    <h3>動画タイトル 4</h3>
-                    <a href="子サイトリンク4.html">動画を見る</a>
-                </div>
-                <div class="video-item">
-                    <img src="video-thumbnail5.jpg" alt="Video 5 Thumbnail">
-                    <h3>動画タイトル 5</h3>
-                    <a href="子サイトリンク5.html">動画を見る</a>
-                </div>
-                <div class="video-item">
-                    <img src="video-thumbnail6.jpg" alt="Video 6 Thumbnail">
-                    <h3>動画タイトル 6</h3>
-                    <a href="子サイトリンク6.html">動画を見る</a>
-                </div>
+            <div class="channel-item">
+                <img src="vtuber2.jpg" alt="Vtuber 2">
+                <h3>Vtuberチャンネル 2</h3>
+                <a href="親サイトリンク2.html">親サイトを見る</a>
             </div>
-        </section>
+            <div class="channel-item">
+                <img src="vtuber3.jpg" alt="Vtuber 3">
+                <h3>Vtuberチャンネル 3</h3>
+                <a href="親サイトリンク3.html">親サイトを見る</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- 歌から探すタブ -->
+    <div id="song" class="tab-content">
+        <div class="song-list">
+            <div class="song-item">
+                <img src="song1.jpg" alt="Song 1">
+                <h3>曲名 1</h3>
+                <a href="親サイトリンクA.html">関連Vtuberを見る</a>
+            </div>
+            <div class="song-item">
+                <img src="song2.jpg" alt="Song 2">
+                <h3>曲名 2</h3>
+                <a href="親サイトリンクB.html">関連Vtuberを見る</a>
+            </div>
+            <div class="song-item">
+                <img src="song3.jpg" alt="Song 3">
+                <h3>曲名 3</h3>
+                <a href="親サイトリンクC.html">関連Vtuberを見る</a>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 チャンネル名. All Rights Reserved.</p>
+        <p>&copy; 2024 Vtuber歌枠まとめ. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // タブを開くための関数
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            // 全てのタブ内容を非表示
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+
+            // 全てのタブリンクのアクティブ状態を解除
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // 選択したタブを表示し、アクティブ状態にする
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+
+        // 初期表示のための処理
+        document.getElementById("vtuber").classList.add("active");
+    </script>
 
 </body>
 </html>
