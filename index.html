@@ -1,173 +1,128 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7816190894013186"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7816190894013186" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>音楽セットリストと動画</title>
+    <title>親サイト - チャンネル名</title>
     <style>
-        /* ベースのスタイル */
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #f0f0f0;
         }
-
-        h1, h2 {
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
             text-align: center;
-            color: #212529;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 1.5em;
             margin: 20px 0;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-
-        /* 動画埋め込みのスタイル */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 アスペクト比 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background-color: #000;
-            margin-bottom: 40px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* テーブルのスタイル */
-        .setlist-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .setlist-table th, .setlist-table td {
-            padding: 12px;
+        .video-item {
+            background-color: white;
+            margin-bottom: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            border-bottom: 1px solid #ddd;
+            padding: 10px;
         }
-
-        .setlist-table th {
-            background-color: #343a40;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .video-item img {
+            width: 100%;
+            height: auto;
         }
-
-        .setlist-table td {
-            color: #555;
+        .video-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
-
-        .setlist-table tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* タイムスタンプリンクのスタイル */
-        .setlist-table td a {
-            color: #007bff;
+        .video-item a {
             text-decoration: none;
-            font-weight: bold;
+            color: #007bff;
         }
-
-        .setlist-table td a:hover {
+        .video-item a:hover {
             text-decoration: underline;
         }
-
-        /* 広告枠のスタイル */
-        .ad-container {
-            margin: 20px 0;
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
             text-align: center;
-        }
-
-        .ad-container iframe {
+            position: absolute;
             width: 100%;
-            height: 150px;
-            border: none;
-        }
-
-        /* スマートフォン対応 */
-        @media (max-width: 768px) {
-            h1, h2 {
-                font-size: 1.5em;
-            }
-
-            .setlist-table th, .setlist-table td {
-                padding: 10px;
-            }
-
-            .ad-container iframe {
-                height: 100px; /* スマホ用の高さに変更 */
-            }
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
+    <header>
+        <h1>チャンネル名</h1>
+        <p>最新の動画をチェックしよう！</p>
+    </header>
+
     <div class="container">
-        <h1>動画タイトル: Your Video Title</h1>
 
-        <!-- 動画埋め込みセクション -->
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <!-- 新着動画セクション -->
+        <section>
+            <h2 class="section-title">新着動画</h2>
+            <div class="video-list">
+                <div class="video-item">
+                    <img src="video-thumbnail1.jpg" alt="Video 1 Thumbnail">
+                    <h3>動画タイトル 1</h3>
+                    <a href="子サイトリンク1.html">動画を見る</a>
+                </div>
+                <div class="video-item">
+                    <img src="video-thumbnail2.jpg" alt="Video 2 Thumbnail">
+                    <h3>動画タイトル 2</h3>
+                    <a href="子サイトリンク2.html">動画を見る</a>
+                </div>
+                <div class="video-item">
+                    <img src="video-thumbnail3.jpg" alt="Video 3 Thumbnail">
+                    <h3>動画タイトル 3</h3>
+                    <a href="子サイトリンク3.html">動画を見る</a>
+                </div>
+            </div>
+        </section>
 
-        <!-- 広告枠 -->
-        <div class="ad-container">
-            <!-- Google AdSenseや他の広告プラットフォームのコードをここに挿入 -->
-            <iframe src="https://example.com/your-ad" title="広告"></iframe>
-        </div>
+        <!-- 人気動画セクション -->
+        <section>
+            <h2 class="section-title">人気動画</h2>
+            <div class="video-list">
+                <div class="video-item">
+                    <img src="video-thumbnail4.jpg" alt="Video 4 Thumbnail">
+                    <h3>動画タイトル 4</h3>
+                    <a href="子サイトリンク4.html">動画を見る</a>
+                </div>
+                <div class="video-item">
+                    <img src="video-thumbnail5.jpg" alt="Video 5 Thumbnail">
+                    <h3>動画タイトル 5</h3>
+                    <a href="子サイトリンク5.html">動画を見る</a>
+                </div>
+                <div class="video-item">
+                    <img src="video-thumbnail6.jpg" alt="Video 6 Thumbnail">
+                    <h3>動画タイトル 6</h3>
+                    <a href="子サイトリンク6.html">動画を見る</a>
+                </div>
+            </div>
+        </section>
 
-        <h2>音楽セットリスト</h2>
-        
-        <!-- セットリストのテーブル -->
-        <table class="setlist-table">
-            <thead>
-                <tr>
-                    <th>タイムスタンプ</th>
-                    <th>曲名</th>
-                    <th>アーティスト</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="https://youtu.be/your-video-id?t=60" target="_blank">01:00</a></td>
-                    <td>Song Title 1</td>
-                    <td>Artist 1</td>
-                </tr>
-                <tr>
-                    <td><a href="https://youtu.be/your-video-id?t=120" target="_blank">02:00</a></td>
-                    <td>Song Title 2</td>
-                    <td>Artist 2</td>
-                </tr>
-                <tr>
-                    <td><a href="https://youtu.be/your-video-id?t=180" target="_blank">03:00</a></td>
-                    <td>Song Title 3</td>
-                    <td>Artist 3</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- 広告枠（テーブル下部） -->
-        <div class="ad-container">
-            <iframe src="https://example.com/your-ad" title="広告"></iframe>
-        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 チャンネル名. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
