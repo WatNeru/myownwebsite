@@ -1,0 +1,507 @@
+
+        <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="赤井はあとの歌枠動画とそのセットリストを紹介。人気VTuberの歌唱力をお楽しみください。">
+            <title>Vtuber歌枠 | セットリスト | ホロライブ | VTuber | 【歌枠】HALLOWEEN PARTY NIGHT♪【ホロライブ/はあちゃま】| 赤井はあと |</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                :root {
+                    --primary-color: #e74c3c;
+                    --secondary-color: #3498db;
+                    --background-color: #ecf0f1;
+                    --text-color: #2c3e50;
+                    --heading-color: #34495e;
+                    --accent-color: #f39c12;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    font-family: 'Noto Sans JP', sans-serif;
+                    background-color: var(--background-color);
+                    color: var(--text-color);
+                    line-height: 1.6;
+                }
+                
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                header {
+                    background-color: var(--primary-color);
+                    color: white;
+                    text-align: center;
+                    padding: 2rem 0;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                
+                h2 {
+                    color: var(--heading-color);
+                    margin: 2rem 0 1rem;
+                    text-align: center;
+                }
+                
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background-color: #000;
+                    margin-bottom: 2rem;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .setlist-container {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .setlist-table {
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    margin-top: 1rem;
+                }
+                
+                .setlist-table th, .setlist-table td {
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+                
+                .setlist-table th {
+                    background-color: var(--secondary-color);
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                
+                .setlist-table tr:last-child td {
+                    border-bottom: none;
+                }
+                
+                .setlist-table tr:hover {
+                    background-color: #f5f5f5;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .setlist-table td a {
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                
+                .setlist-table td a:hover {
+                    color: var(--accent-color);
+                }
+                
+                .ad-container {
+                    margin: 2rem 0;
+                    text-align: center;
+                }
+                
+                .ad-container iframe {
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                footer {
+                    background-color: var(--heading-color);
+                    color: white;
+                    text-align: center;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+                }
+                
+                .social-links {
+                    margin-top: 1rem;
+                }
+                
+                .social-links a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 1.2rem;
+                }
+                
+                @media (max-width: 768px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.8rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 10px;
+                    }
+                    
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.6rem;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                /* ダークモードサポート */
+                @media (prefers-color-scheme: dark) {
+                    :root {
+                        --background-color: #2c3e50;
+                        --text-color: #ecf0f1;
+                        --heading-color: #3498db;
+                    }
+                    
+                    .setlist-container {
+                        background-color: #34495e;
+                    }
+                    
+                    .setlist-table tr:hover {
+                        background-color: #2c3e50;
+                    }
+                }
+
+                /* アニメーション */
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                .fade-in {
+                    animation: fadeIn 1s ease-out;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="fade-in">
+                    <h1>歌枠セットリスト</h1>
+                    <p>動画タイトル: 【歌枠】HALLOWEEN PARTY NIGHT♪【ホロライブ/はあちゃま】</p>
+                </header>
+
+                <main>
+                    <section class="fade-in">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rx2mufVoRi4" 
+                            title="Vtuberの歌枠動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="setlist-container fade-in">
+                        <h2>セットリスト</h2>
+                        
+                        <table class="setlist-table">
+                            <thead>
+                                <tr>
+                                    <th>タイムスタンプ</th>
+                                    <th>曲名</th>
+                                    <th>アーティスト</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=142" target="_blank">02:22</a></td>
+                                    <td>REDHEART</td>
+                                    <td>REDHEART</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=412" target="_blank">06:52</a></td>
+                                    <td>START:DASH</td>
+                                    <td>START:DASH</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=862" target="_blank">14:22</a></td>
+                                    <td>STARLIGHTPARADE</td>
+                                    <td>STARLIGHTPARADE</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=1299" target="_blank">21:39</a></td>
+                                    <td>Encore</td>
+                                    <td>Encore</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=1624" target="_blank">27:04</a></td>
+                                    <td>CrazyPartyNight～RevengeofPumpkin～</td>
+                                    <td>CrazyPartyNight～RevengeofPumpkin～</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=1980" target="_blank">33:00</a></td>
+                                    <td>Happyjamjam</td>
+                                    <td>Happyjamjam</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=2103" target="_blank">35:03</a></td>
+                                    <td>Dryflower</td>
+                                    <td>Dryflower</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=2426" target="_blank">40:26</a></td>
+                                    <td>Kokoronashi</td>
+                                    <td>Kokoronashi</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=2746" target="_blank">45:46</a></td>
+                                    <td>MousouKanshouDaishouRenmei</td>
+                                    <td>MousouKanshouDaishouRenmei</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=3099" target="_blank">51:39</a></td>
+                                    <td>Odo</td>
+                                    <td>Odo</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=3412" target="_blank">56:52</a></td>
+                                    <td>TKG(Raweggonrice)Song</td>
+                                    <td>TKG(Raweggonrice)Song</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=3545" target="_blank">59:05</a></td>
+                                    <td>PERFECTHUMAN</td>
+                                    <td>PERFECTHUMAN</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=3749" target="_blank">1:02:29</a></td>
+                                    <td>HOTLIMIT</td>
+                                    <td>HOTLIMIT</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=4050" target="_blank">1:07:30</a></td>
+                                    <td>Usseewa(Shutthefuckup.)</td>
+                                    <td>Usseewa(Shutthefuckup.)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=4302" target="_blank">1:11:42</a></td>
+                                    <td>ReadyMade</td>
+                                    <td>ReadyMade</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=4610" target="_blank">1:16:50</a></td>
+                                    <td>YoruniKakeru(IntotheNight)</td>
+                                    <td>YoruniKakeru(IntotheNight)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=4923" target="_blank">1:22:03</a></td>
+                                    <td>Haruwotugeru(Announcethearrivalofspring)</td>
+                                    <td>Haruwotugeru(Announcethearrivalofspring)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=5183" target="_blank">1:26:23</a></td>
+                                    <td>Kaibutsu(Monster)</td>
+                                    <td>Kaibutsu(Monster)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=5445" target="_blank">1:30:45</a></td>
+                                    <td>Gunjou(Ultramarine)</td>
+                                    <td>Gunjou(Ultramarine)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=5757" target="_blank">1:35:57</a></td>
+                                    <td>Sharuru(Charles)</td>
+                                    <td>Sharuru(Charles)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=6048" target="_blank">1:40:48</a></td>
+                                    <td>Dappōrokku(Law-evadingrock)</td>
+                                    <td>Dappōrokku(Law-evadingrock)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=6364" target="_blank">1:46:04</a></td>
+                                    <td>Taiyōkeidesuko(SolarSystemDisco)</td>
+                                    <td>Taiyōkeidesuko(SolarSystemDisco)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=6633" target="_blank">1:50:33</a></td>
+                                    <td>AsuenoTegami(ALettertoTomorrow)</td>
+                                    <td>AsuenoTegami(ALettertoTomorrow)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=7001" target="_blank">1:56:41</a></td>
+                                    <td>Hello,Again～Mukashikaraarubasho～</td>
+                                    <td>Hello,Again～Mukashikaraarubasho～</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=7392" target="_blank">2:03:12</a></td>
+                                    <td>Encore</td>
+                                    <td>Encore</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=7752" target="_blank">2:09:12</a></td>
+                                    <td>InochinoKioku(WhenIRememberThisLife)</td>
+                                    <td>InochinoKioku(WhenIRememberThisLife)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=8148" target="_blank">2:15:48</a></td>
+                                    <td>ANIMA</td>
+                                    <td>ANIMA</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=8447" target="_blank">2:20:47</a></td>
+                                    <td>EnvyBaby</td>
+                                    <td>EnvyBaby</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=8604" target="_blank">2:23:24</a></td>
+                                    <td>Vampire</td>
+                                    <td>Vampire</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=8990" target="_blank">2:29:50</a></td>
+                                    <td>Orionwonazoru(TracetheOrion)</td>
+                                    <td>Orionwonazoru(TracetheOrion)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=9328" target="_blank">2:35:28</a></td>
+                                    <td>HiKARiE</td>
+                                    <td>HiKARiE</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=9673" target="_blank">2:41:13</a></td>
+                                    <td>Hakujitsu(BrightWhiteDay)</td>
+                                    <td>Hakujitsu(BrightWhiteDay)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=9965" target="_blank">2:46:05</a></td>
+                                    <td>Pretender</td>
+                                    <td>Pretender</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=10336" target="_blank">2:52:16</a></td>
+                                    <td>Akaisuītopī(Redsweetpea)</td>
+                                    <td>Akaisuītopī(Redsweetpea)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=10670" target="_blank">2:57:50</a></td>
+                                    <td>Todokanaikara(Iwon'tbeabletoreachyou)</td>
+                                    <td>Todokanaikara(Iwon'tbeabletoreachyou)</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=10960" target="_blank">3:02:40</a></td>
+                                    <td>AnpanmanMarch</td>
+                                    <td>AnpanmanMarch</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/rx2mufVoRi4?t=11173" target="_blank">3:06:13</a></td>
+                                    <td>YukinoHana(SnowFlower)</td>
+                                    <td>YukinoHana(SnowFlower)</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <div class="ad-container fade-in">
+                        <iframe src="https://example.com/your-ad" title="広告" width="728" height="90"></iframe>
+                    </div>
+                </main>
+
+                <footer class="fade-in">
+                    <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+                    <div class="social-links">
+                        <a href="https://v-songs.com/contact.html" aria-label="お問い合わせ">お問い合わせ</a>
+                        <a href="https://v-songs.com/privacy.html" aria-label="プライバシーポリシー">プライバシーポリシー</a>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('fade-in');
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('section, .ad-container').forEach((el) => {
+                        observer.observe(el);
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

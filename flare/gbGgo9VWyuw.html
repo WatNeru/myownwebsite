@@ -1,0 +1,567 @@
+
+        <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="不知火フレアの歌枠動画とそのセットリストを紹介。人気VTuberの歌唱力をお楽しみください。">
+            <title>Vtuber歌枠 | セットリスト | ホロライブ | VTuber | 【歌枠】目指せ65万人！🎤My song will reach you【不知火フレア/ホロライブ】| 不知火フレア |</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                :root {
+                    --primary-color: #e74c3c;
+                    --secondary-color: #3498db;
+                    --background-color: #ecf0f1;
+                    --text-color: #2c3e50;
+                    --heading-color: #34495e;
+                    --accent-color: #f39c12;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    font-family: 'Noto Sans JP', sans-serif;
+                    background-color: var(--background-color);
+                    color: var(--text-color);
+                    line-height: 1.6;
+                }
+                
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                header {
+                    background-color: var(--primary-color);
+                    color: white;
+                    text-align: center;
+                    padding: 2rem 0;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                
+                h2 {
+                    color: var(--heading-color);
+                    margin: 2rem 0 1rem;
+                    text-align: center;
+                }
+                
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background-color: #000;
+                    margin-bottom: 2rem;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .setlist-container {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .setlist-table {
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    margin-top: 1rem;
+                }
+                
+                .setlist-table th, .setlist-table td {
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+                
+                .setlist-table th {
+                    background-color: var(--secondary-color);
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                
+                .setlist-table tr:last-child td {
+                    border-bottom: none;
+                }
+                
+                .setlist-table tr:hover {
+                    background-color: #f5f5f5;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .setlist-table td a {
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                
+                .setlist-table td a:hover {
+                    color: var(--accent-color);
+                }
+                
+                .ad-container {
+                    margin: 2rem 0;
+                    text-align: center;
+                }
+                
+                .ad-container iframe {
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                footer {
+                    background-color: var(--heading-color);
+                    color: white;
+                    text-align: center;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+                }
+                
+                .social-links {
+                    margin-top: 1rem;
+                }
+                
+                .social-links a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 1.2rem;
+                }
+                
+                @media (max-width: 768px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.8rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 10px;
+                    }
+                    
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.6rem;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                /* ダークモードサポート */
+                @media (prefers-color-scheme: dark) {
+                    :root {
+                        --background-color: #2c3e50;
+                        --text-color: #ecf0f1;
+                        --heading-color: #3498db;
+                    }
+                    
+                    .setlist-container {
+                        background-color: #34495e;
+                    }
+                    
+                    .setlist-table tr:hover {
+                        background-color: #2c3e50;
+                    }
+                }
+
+                /* アニメーション */
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                .fade-in {
+                    animation: fadeIn 1s ease-out;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="fade-in">
+                    <h1>歌枠セットリスト</h1>
+                    <p>動画タイトル: 【歌枠】目指せ65万人！🎤My song will reach you【不知火フレア/ホロライブ】</p>
+                </header>
+
+                <main>
+                    <section class="fade-in">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gbGgo9VWyuw" 
+                            title="Vtuberの歌枠動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="setlist-container fade-in">
+                        <h2>セットリスト</h2>
+                        
+                        <table class="setlist-table">
+                            <thead>
+                                <tr>
+                                    <th>タイムスタンプ</th>
+                                    <th>曲名</th>
+                                    <th>アーティスト</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=228" target="_blank">03:48</a></td>
+                                    <td>Song1</td>
+                                    <td>Song1</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=727" target="_blank">12:07</a></td>
+                                    <td>Song2</td>
+                                    <td>Song2</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=776" target="_blank">12:56</a></td>
+                                    <td>Song3</td>
+                                    <td>Song3</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=1108" target="_blank">18:28</a></td>
+                                    <td>Song4</td>
+                                    <td>Song4</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=1350" target="_blank">22:30</a></td>
+                                    <td>Song5</td>
+                                    <td>Song5</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=1582" target="_blank">26:22</a></td>
+                                    <td>Song6</td>
+                                    <td>Song6</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=1955" target="_blank">32:35</a></td>
+                                    <td>Song7</td>
+                                    <td>Song7</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=2381" target="_blank">39:41</a></td>
+                                    <td>Song8</td>
+                                    <td>Song8</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=2706" target="_blank">45:06</a></td>
+                                    <td>Song9</td>
+                                    <td>Song9</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=3073" target="_blank">51:13</a></td>
+                                    <td>Song10</td>
+                                    <td>Song10</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=3675" target="_blank">01:01:15</a></td>
+                                    <td>Song11</td>
+                                    <td>Song11</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=3960" target="_blank">01:06:00</a></td>
+                                    <td>Song12</td>
+                                    <td>Song12</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=4263" target="_blank">01:11:03</a></td>
+                                    <td>Song13</td>
+                                    <td>Song13</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=4546" target="_blank">01:15:46</a></td>
+                                    <td>Song14</td>
+                                    <td>Song14</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=4844" target="_blank">01:20:44</a></td>
+                                    <td>Song15</td>
+                                    <td>Song15</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=5076" target="_blank">01:24:36</a></td>
+                                    <td>Song16</td>
+                                    <td>Song16</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=5275" target="_blank">01:27:55</a></td>
+                                    <td>Song17</td>
+                                    <td>Song17</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=5533" target="_blank">01:32:13</a></td>
+                                    <td>Song18</td>
+                                    <td>Song18</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=6112" target="_blank">01:41:52</a></td>
+                                    <td>Song19</td>
+                                    <td>Song19</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=6416" target="_blank">01:46:56</a></td>
+                                    <td>Song20</td>
+                                    <td>Song20</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=6670" target="_blank">01:51:10</a></td>
+                                    <td>Song21</td>
+                                    <td>Song21</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=6943" target="_blank">01:55:43</a></td>
+                                    <td>Song22</td>
+                                    <td>Song22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=7262" target="_blank">02:01:02</a></td>
+                                    <td>Song23</td>
+                                    <td>Song23</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=7609" target="_blank">02:06:49</a></td>
+                                    <td>Song24</td>
+                                    <td>Song24</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=7907" target="_blank">02:11:47</a></td>
+                                    <td>Song25</td>
+                                    <td>Song25</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=8152" target="_blank">02:15:52</a></td>
+                                    <td>Song26</td>
+                                    <td>Song26</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=8532" target="_blank">02:22:12</a></td>
+                                    <td>Song27</td>
+                                    <td>Song27</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=8771" target="_blank">02:26:11</a></td>
+                                    <td>Song28</td>
+                                    <td>Song28</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=9083" target="_blank">02:31:23</a></td>
+                                    <td>Song29</td>
+                                    <td>Song29</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=9489" target="_blank">02:38:09</a></td>
+                                    <td>Song30</td>
+                                    <td>Song30</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=9941" target="_blank">02:45:41</a></td>
+                                    <td>Song31</td>
+                                    <td>Song31</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=10253" target="_blank">02:50:53</a></td>
+                                    <td>Song32</td>
+                                    <td>Song32</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=10502" target="_blank">02:55:02</a></td>
+                                    <td>Song33</td>
+                                    <td>Song33</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=10778" target="_blank">02:59:38</a></td>
+                                    <td>Song34</td>
+                                    <td>Song34</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=11258" target="_blank">03:07:38</a></td>
+                                    <td>Song35</td>
+                                    <td>Song35</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=11604" target="_blank">03:13:24</a></td>
+                                    <td>Song36</td>
+                                    <td>Song36</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=11896" target="_blank">03:18:16</a></td>
+                                    <td>Song37</td>
+                                    <td>Song37</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=12245" target="_blank">03:24:05</a></td>
+                                    <td>Song38</td>
+                                    <td>Song38</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=12528" target="_blank">03:28:48</a></td>
+                                    <td>Song39</td>
+                                    <td>Song39</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=12943" target="_blank">03:35:43</a></td>
+                                    <td>Song40</td>
+                                    <td>Song40</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=13304" target="_blank">03:41:44</a></td>
+                                    <td>Song41</td>
+                                    <td>Song41</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=13601" target="_blank">03:46:41</a></td>
+                                    <td>Song42</td>
+                                    <td>Song42</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=13916" target="_blank">03:51:56</a></td>
+                                    <td>Song43</td>
+                                    <td>Song43</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=14223" target="_blank">03:57:03</a></td>
+                                    <td>Song44</td>
+                                    <td>Song44</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=14665" target="_blank">04:04:25</a></td>
+                                    <td>Song45</td>
+                                    <td>Song45</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=14991" target="_blank">04:09:51</a></td>
+                                    <td>Song46</td>
+                                    <td>Song46</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/gbGgo9VWyuw?t=15329" target="_blank">04:15:29</a></td>
+                                    <td>Song47</td>
+                                    <td>Song47</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <div class="ad-container fade-in">
+                        <iframe src="https://example.com/your-ad" title="広告" width="728" height="90"></iframe>
+                    </div>
+                </main>
+
+                <footer class="fade-in">
+                    <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+                    <div class="social-links">
+                        <a href="https://v-songs.com/contact.html" aria-label="お問い合わせ">お問い合わせ</a>
+                        <a href="https://v-songs.com/privacy.html" aria-label="プライバシーポリシー">プライバシーポリシー</a>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('fade-in');
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('section, .ad-container').forEach((el) => {
+                        observer.observe(el);
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
