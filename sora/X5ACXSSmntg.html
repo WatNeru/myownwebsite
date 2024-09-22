@@ -1,0 +1,411 @@
+
+        <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="ときノそらの歌枠動画とそのセットリストを紹介。人気VTuberの歌唱力をお楽しみください。">
+            <title>Vtuber歌枠 | セットリスト | ホロライブ | VTuber | 【Song/歌枠】歌ってみた動画の前に歌ってみよう！【#ときのそら生放送/ときのそら 】| ときノそら |</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                :root {
+                    --primary-color: #e74c3c;
+                    --secondary-color: #3498db;
+                    --background-color: #ecf0f1;
+                    --text-color: #2c3e50;
+                    --heading-color: #34495e;
+                    --accent-color: #f39c12;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    font-family: 'Noto Sans JP', sans-serif;
+                    background-color: var(--background-color);
+                    color: var(--text-color);
+                    line-height: 1.6;
+                }
+                
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                header {
+                    background-color: var(--primary-color);
+                    color: white;
+                    text-align: center;
+                    padding: 2rem 0;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                
+                h2 {
+                    color: var(--heading-color);
+                    margin: 2rem 0 1rem;
+                    text-align: center;
+                }
+                
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background-color: #000;
+                    margin-bottom: 2rem;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .setlist-container {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .setlist-table {
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    margin-top: 1rem;
+                }
+                
+                .setlist-table th, .setlist-table td {
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+                
+                .setlist-table th {
+                    background-color: var(--secondary-color);
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                
+                .setlist-table tr:last-child td {
+                    border-bottom: none;
+                }
+                
+                .setlist-table tr:hover {
+                    background-color: #f5f5f5;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .setlist-table td a {
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                
+                .setlist-table td a:hover {
+                    color: var(--accent-color);
+                }
+                
+                .ad-container {
+                    margin: 2rem 0;
+                    text-align: center;
+                }
+                
+                .ad-container iframe {
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                footer {
+                    background-color: var(--heading-color);
+                    color: white;
+                    text-align: center;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+                }
+                
+                .social-links {
+                    margin-top: 1rem;
+                }
+                
+                .social-links a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 1.2rem;
+                }
+                
+                @media (max-width: 768px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.8rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 10px;
+                    }
+                    
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.6rem;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                /* ダークモードサポート */
+                @media (prefers-color-scheme: dark) {
+                    :root {
+                        --background-color: #2c3e50;
+                        --text-color: #ecf0f1;
+                        --heading-color: #3498db;
+                    }
+                    
+                    .setlist-container {
+                        background-color: #34495e;
+                    }
+                    
+                    .setlist-table tr:hover {
+                        background-color: #2c3e50;
+                    }
+                }
+
+                /* アニメーション */
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                .fade-in {
+                    animation: fadeIn 1s ease-out;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="fade-in">
+                    <h1>歌枠セットリスト</h1>
+                    <p>動画タイトル: 【Song/歌枠】歌ってみた動画の前に歌ってみよう！【#ときのそら生放送/ときのそら 】</p>
+                </header>
+
+                <main>
+                    <section class="fade-in">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/X5ACXSSmntg" 
+                            title="Vtuberの歌枠動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="setlist-container fade-in">
+                        <h2>セットリスト</h2>
+                        
+                        <table class="setlist-table">
+                            <thead>
+                                <tr>
+                                    <th>タイムスタンプ</th>
+                                    <th>曲名</th>
+                                    <th>アーティスト</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=28" target="_blank">00:28</a></td>
+                                    <td>Start</td>
+                                    <td>Start</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=304" target="_blank">05:04</a></td>
+                                    <td>可愛くてごめん</td>
+                                    <td>可愛くてごめん</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=671" target="_blank">11:11</a></td>
+                                    <td>タイミング</td>
+                                    <td>タイミング</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=1102" target="_blank">18:22</a></td>
+                                    <td>onlymyrailgun</td>
+                                    <td>onlymyrailgun</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=1637" target="_blank">27:17</a></td>
+                                    <td>オトナブルー</td>
+                                    <td>オトナブルー</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=1959" target="_blank">32:39</a></td>
+                                    <td>アイドル</td>
+                                    <td>アイドル</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=2349" target="_blank">39:09</a></td>
+                                    <td>恋しさとせつなさと心強さと</td>
+                                    <td>恋しさとせつなさと心強さと</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=2788" target="_blank">46:28</a></td>
+                                    <td>月光花</td>
+                                    <td>月光花</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=3222" target="_blank">53:42</a></td>
+                                    <td>さくらびと</td>
+                                    <td>さくらびと</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=3554" target="_blank">59:14</a></td>
+                                    <td>気分上々↑↑</td>
+                                    <td>気分上々↑↑</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=3605" target="_blank">01:00:05</a></td>
+                                    <td>拝啓ドッペルゲンガー</td>
+                                    <td>拝啓ドッペルゲンガー</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=74" target="_blank">01:14</a></td>
+                                    <td>鼻歌</td>
+                                    <td>鼻歌</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=1031" target="_blank">17:11</a></td>
+                                    <td>鳴き声集</td>
+                                    <td>鳴き声集</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=2571" target="_blank">42:51</a></td>
+                                    <td>ｱｱｱｱ</td>
+                                    <td>ｱｱｱｱ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=61" target="_blank">01:01</a></td>
+                                    <td>ﾊｯ</td>
+                                    <td>ﾊｯ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=199" target="_blank">03:19</a></td>
+                                    <td>ﾜｱｱｲ</td>
+                                    <td>ﾜｱｱｲ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=519" target="_blank">08:39</a></td>
+                                    <td>ﾜｱｱｲ</td>
+                                    <td>ﾜｱｱｲ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=1353" target="_blank">22:33</a></td>
+                                    <td>ﾊｱｱｲ</td>
+                                    <td>ﾊｱｱｲ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=2175" target="_blank">36:15</a></td>
+                                    <td>ｲｴｴｴ</td>
+                                    <td>ｲｴｴｴ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=3552" target="_blank">59:12</a></td>
+                                    <td>ｲｴｴｴ</td>
+                                    <td>ｲｴｴｴ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/X5ACXSSmntg?t=2353" target="_blank">39:13</a></td>
+                                    <td>ﾜｧ</td>
+                                    <td>ﾜｧ</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <div class="ad-container fade-in">
+                        <iframe src="https://example.com/your-ad" title="広告" width="728" height="90"></iframe>
+                    </div>
+                </main>
+
+                <footer class="fade-in">
+                    <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+                    <div class="social-links">
+                        <a href="https://v-songs.com/contact.html" aria-label="お問い合わせ">お問い合わせ</a>
+                        <a href="https://v-songs.com/privacy.html" aria-label="プライバシーポリシー">プライバシーポリシー</a>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('fade-in');
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('section, .ad-container').forEach((el) => {
+                        observer.observe(el);
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
