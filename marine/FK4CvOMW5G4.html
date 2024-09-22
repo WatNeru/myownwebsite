@@ -1,0 +1,417 @@
+
+        <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Vtuberの歌枠動画とそのセットリストを紹介。人気VTuberの歌唱力をお楽しみください。">
+            <title>Vtuber歌枠 | セットリスト | ホロライブ | VTuber | 【歌ってみた】有名アニメソング歌枠！/Singing Anime Songs【ホロライブ/宝鐘マリン】</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                :root {
+                    --primary-color: #e74c3c;
+                    --secondary-color: #3498db;
+                    --background-color: #ecf0f1;
+                    --text-color: #2c3e50;
+                    --heading-color: #34495e;
+                    --accent-color: #f39c12;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    font-family: 'Noto Sans JP', sans-serif;
+                    background-color: var(--background-color);
+                    color: var(--text-color);
+                    line-height: 1.6;
+                }
+                
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                header {
+                    background-color: var(--primary-color);
+                    color: white;
+                    text-align: center;
+                    padding: 2rem 0;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                
+                h2 {
+                    color: var(--heading-color);
+                    margin: 2rem 0 1rem;
+                    text-align: center;
+                }
+                
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background-color: #000;
+                    margin-bottom: 2rem;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .setlist-container {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .setlist-table {
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    margin-top: 1rem;
+                }
+                
+                .setlist-table th, .setlist-table td {
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+                
+                .setlist-table th {
+                    background-color: var(--secondary-color);
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                
+                .setlist-table tr:last-child td {
+                    border-bottom: none;
+                }
+                
+                .setlist-table tr:hover {
+                    background-color: #f5f5f5;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .setlist-table td a {
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                
+                .setlist-table td a:hover {
+                    color: var(--accent-color);
+                }
+                
+                .ad-container {
+                    margin: 2rem 0;
+                    text-align: center;
+                }
+                
+                .ad-container iframe {
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                footer {
+                    background-color: var(--heading-color);
+                    color: white;
+                    text-align: center;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+                }
+                
+                .social-links {
+                    margin-top: 1rem;
+                }
+                
+                .social-links a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 1.2rem;
+                }
+                
+                @media (max-width: 768px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.8rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 10px;
+                    }
+                    
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.6rem;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                /* ダークモードサポート */
+                @media (prefers-color-scheme: dark) {
+                    :root {
+                        --background-color: #2c3e50;
+                        --text-color: #ecf0f1;
+                        --heading-color: #3498db;
+                    }
+                    
+                    .setlist-container {
+                        background-color: #34495e;
+                    }
+                    
+                    .setlist-table tr:hover {
+                        background-color: #2c3e50;
+                    }
+                }
+
+                /* アニメーション */
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                .fade-in {
+                    animation: fadeIn 1s ease-out;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="fade-in">
+                    <h1>歌枠セットリスト</h1>
+                    <p>動画タイトル: 【歌ってみた】有名アニメソング歌枠！/Singing Anime Songs【ホロライブ/宝鐘マリン】</p>
+                </header>
+
+                <main>
+                    <section class="fade-in">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FK4CvOMW5G4" 
+                            title="Vtuberの歌枠動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="setlist-container fade-in">
+                        <h2>セットリスト</h2>
+                        
+                        <table class="setlist-table">
+                            <thead>
+                                <tr>
+                                    <th>タイムスタンプ</th>
+                                    <th>曲名</th>
+                                    <th>アーティスト</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=425" target="_blank">07:05</a></td>
+                                    <td>紅蓮華</td>
+                                    <td>LiSA</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=624" target="_blank">10:24</a></td>
+                                    <td>JUSTCOMMUNICATION</td>
+                                    <td>TWO-MIX</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=962" target="_blank">16:02</a></td>
+                                    <td>COLORS</td>
+                                    <td>FLOW</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=1211" target="_blank">20:11</a></td>
+                                    <td>勇侠青春謳</td>
+                                    <td>AliProject</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=1382" target="_blank">23:02</a></td>
+                                    <td>やさしさに包まれたなら</td>
+                                    <td>荒井由実</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=1626" target="_blank">27:06</a></td>
+                                    <td>いのちの名前</td>
+                                    <td>木村弓</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=1936" target="_blank">32:16</a></td>
+                                    <td>微笑みの爆弾</td>
+                                    <td>OFFCOURSE</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=2235" target="_blank">37:15</a></td>
+                                    <td>空色デイズ</td>
+                                    <td>藍坊主</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=2543" target="_blank">42:23</a></td>
+                                    <td>タッチ</td>
+                                    <td>岩崎良美</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=2776" target="_blank">46:16</a></td>
+                                    <td>Listen!</td>
+                                    <td>SCREENmode</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=2923" target="_blank">48:43</a></td>
+                                    <td>童話迷宮</td>
+                                    <td>Suara</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=3203" target="_blank">53:23</a></td>
+                                    <td>Butter-Fly</td>
+                                    <td>和田光司</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=3516" target="_blank">58:36</a></td>
+                                    <td>檄！帝国華撃団・改</td>
+                                    <td>田中公平</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=3847" target="_blank">1:04:07</a></td>
+                                    <td>Northernlights</td>
+                                    <td>林原めぐみ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=3950" target="_blank">1:05:50</a></td>
+                                    <td>ハレ晴レユカイ</td>
+                                    <td>平野綾</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=4231" target="_blank">1:10:31</a></td>
+                                    <td>シュガーソングとビターステップ</td>
+                                    <td>UNISONSQUAREGARDEN</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=4611" target="_blank">1:16:51</a></td>
+                                    <td>JOINT</td>
+                                    <td>川田まみ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=4917" target="_blank">1:21:57</a></td>
+                                    <td>はじめてのチュウ</td>
+                                    <td>山野さと子</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=5270" target="_blank">1:27:50</a></td>
+                                    <td>創聖のアクエリオン</td>
+                                    <td>AKINO</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=5724" target="_blank">1:35:24</a></td>
+                                    <td>魂のルフラン:ミサトさんの声真似で</td>
+                                    <td>高橋洋子</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=6160" target="_blank">1:42:40</a></td>
+                                    <td>メリッサ</td>
+                                    <td>ポルノグラフィティ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/FK4CvOMW5G4?t=6521" target="_blank">1:48:41</a></td>
+                                    <td>オリオンをなぞる</td>
+                                    <td>UNISONSQUAREGARDEN</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <div class="ad-container fade-in">
+                        <iframe src="https://example.com/your-ad" title="広告" width="728" height="90"></iframe>
+                    </div>
+                </main>
+
+                <footer class="fade-in">
+                    <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+                    <div class="social-links">
+                        <a href="https://v-songs.com/contact.html" aria-label="お問い合わせ">お問い合わせ</a>
+                        <a href="https://v-songs.com/privacy.html" aria-label="プライバシーポリシー">プライバシーポリシー</a>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('fade-in');
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('section, .ad-container').forEach((el) => {
+                        observer.observe(el);
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
