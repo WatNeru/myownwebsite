@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="ときノそらの最新動画と人気動画をチェック！">
+            <meta name="keywords" content="動画, Vtuber, 歌枠, 新着動画, 人気動画, ときノそら">
+            <title>ときノそら</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f9;
+                    color: #333;
+                }
+                header {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                header p {
+                    font-size: 1.2em;
+                    margin: 5px 0 20px 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                .section-title {
+                    font-size: 1.8em;
+                    margin: 20px 0;
+                    border-bottom: 2px solid #ddd;
+                    padding-bottom: 10px;
+                }
+                .video-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                }
+                .video-item {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+                .video-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 15px rgba(148, 142, 142, 0.2);
+                }
+                .video-item img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .video-item h3 {
+                    font-size: 1.2em;
+                    margin: 10px 0;
+                    padding: 0 10px;
+                }
+                .video-item a {
+                    display: block;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: background-color 0.3s;
+                }
+                .video-item a:hover {
+                    background-color: #0056b3;
+                }
+                footer {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+
+            <header>
+                <h1>ときノそら</h1>
+                <p>最新の動画をチェックしよう！</p>
+            </header>
+
+            <div class="container">
+
+                <!-- 人気動画セクション -->
+                <section>
+                    <h2 class="section-title">人気動画</h2>
+                    <div class="video-list">
+                        <div class="video-item">
+                            <img src="video-thumbnail4.jpg" alt="Video 4 Thumbnail">
+                            <h3>動画タイトル 4</h3>
+                            <a href="子サイトリンク4.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail5.jpg" alt="Video 5 Thumbnail">
+                            <h3>動画タイトル 5</h3>
+                            <a href="子サイトリンク5.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail6.jpg" alt="Video 6 Thumbnail">
+                            <h3>動画タイトル 6</h3>
+                            <a href="子サイトリンク6.html">動画を見る</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 新着動画セクション -->
+                <section>
+                    <h2 class="section-title">新着動画</h2>
+                    <div class="video-list">
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Uu2lhz6wvWg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Minecraft】シーランタン歌枠【#ときのそら生放送】</h3>
+                            <a href="sora/Uu2lhz6wvWg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/tEHwNbzp8M8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】５月はお歌がんばるぞ！！～sing stream～【＃ときのそら生放送】</h3>
+                            <a href="sora/tEHwNbzp8M8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/LdFNHDZ-5A4/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】３０分だけ歌います～！！【＃ときのそら生放送】</h3>
+                            <a href="sora/LdFNHDZ-5A4.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/vCC73PsQpSE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】いろんな歌を歌ってみよう！【＃ときのそら生放送】</h3>
+                            <a href="sora/vCC73PsQpSE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/0XRVp92cY04/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】４周年3Dライブ決定！！ミクランド感想会＆お歌！【＃ときのそら生放送】</h3>
+                            <a href="sora/0XRVp92cY04.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/0ImXtbfRhws/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】Sing a song～告知もちょっとあるよ♪～【＃ときのそら生放送】</h3>
+                            <a href="sora/0ImXtbfRhws.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2qSJD4PXhdM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【オリ曲歌枠】original SONG Sing a song～猫の話も～【＃ときのそら生放送】</h3>
+                            <a href="sora/2qSJD4PXhdM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/poECGIoZC0s/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】Sing a song～歌っちゃうぞ！！～【＃ときのそら生放送】</h3>
+                            <a href="sora/poECGIoZC0s.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/zCnbavQE5t0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】Sing a song～夜の歌枠～【＃ときのそら生放送】</h3>
+                            <a href="sora/zCnbavQE5t0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/sL36baNYFxU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【ヘッドセットもらった】お披露目告知Replay歌枠！！【#ときのそら生放送】</h3>
+                            <a href="sora/sL36baNYFxU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2k_J2gB3yZ8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【オリ曲歌枠】Dreaming!デビューから3年も経ったの！？【#ときのそら生放送】</h3>
+                            <a href="sora/2k_J2gB3yZ8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/kFg0dJ22UIE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】カラオケでよく歌う曲を歌ってみようの枠【#ときのそら生放送】</h3>
+                            <a href="sora/kFg0dJ22UIE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-8LnIpufmiE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ドレスで好きな曲歌おうかな配信【#ときのそら生放送】</h3>
+                            <a href="sora/-8LnIpufmiE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-8LnIpufmiE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ドレスで好きな曲歌おうかな配信【#ときのそら生放送】</h3>
+                            <a href="sora/-8LnIpufmiE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/jo-GxR22VB8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】Re:Playの歌を歌いつつ告知もするの！【#ときのそら生放送】</h3>
+                            <a href="sora/jo-GxR22VB8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/jo-GxR22VB8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】Re:Playの歌を歌いつつ告知もするの！【#ときのそら生放送】</h3>
+                            <a href="sora/jo-GxR22VB8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/lt-3DBt4e7U/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】まったり歌ってこう！！【#ときのそら生放送】</h3>
+                            <a href="sora/lt-3DBt4e7U.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/dRpN9GjU8I0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】新髪型で歌っていく枠【#ときのそら生放送】</h3>
+                            <a href="sora/dRpN9GjU8I0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/n8_OUjfx3Z8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】1時間歌っていくよ～告知もある～【#ときのそら生放送】</h3>
+                            <a href="sora/n8_OUjfx3Z8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/FX4rnqbBIw8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】告知しつつ歌う枠！！【#ときのそら生放送】</h3>
+                            <a href="sora/FX4rnqbBIw8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2eVDXPb3AMo/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】楽しく歌っていこうの枠【#ときのそら生放送】</h3>
+                            <a href="sora/2eVDXPb3AMo.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZKfoKw0egJk/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【ドレス上着お披露目】Sign歌枠！！【#ときのそら生放送】</h3>
+                            <a href="sora/ZKfoKw0egJk.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/0UqRDxBDgCM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【sing/歌枠】のんびり歌いますか～【#ときのそら生放送】</h3>
+                            <a href="sora/0UqRDxBDgCM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/0mAvNRRx5dE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠/Sing】多分冬じゃないかなって【#ときのそら生放送】</h3>
+                            <a href="sora/0mAvNRRx5dE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/EnYLu8KDtGo/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【#ホロクリスマス歌枠リレー】楽しいクリスマスにしよう！！【ときのそら】</h3>
+                            <a href="sora/EnYLu8KDtGo.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/9yYB-3kNV94/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】高音域曲歌っていく【#ときのそら生放送】</h3>
+                            <a href="sora/9yYB-3kNV94.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Qfmxz7i_2Z4/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠/SING】夜にしっとりバラードはどう？【#ときのそら生放送】</h3>
+                            <a href="sora/Qfmxz7i_2Z4.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-TKBELQqZ3o/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠/SING/カラオケルーム】気になるから歌ってみたい！！【#ときのそら生放送 /ホロライブ】</h3>
+                            <a href="sora/-TKBELQqZ3o.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZuVjmTdOwPE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】ノリノリな曲を歌っていこう♪【#ときのそら生放送 】</h3>
+                            <a href="sora/ZuVjmTdOwPE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/9s8MLh5e73M/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】ボーカロイド曲歌いたいの配信【#ときのそら生放送 】</h3>
+                            <a href="sora/9s8MLh5e73M.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/rTtJ0Tuu6UY/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Sing/歌枠】まだまだ歌はおわらないぞ！！【#ときのそら生放送 】</h3>
+                            <a href="sora/rTtJ0Tuu6UY.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/QzQByFsQVNQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【オリ曲歌枠】アルバムデビュー4周年だから歌う。【#ときのそら生放送 】</h3>
+                            <a href="sora/QzQByFsQVNQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/HsWOOFmMQ-E/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】午後のちょこっと歌枠【#ときのそら生放送 】</h3>
+                            <a href="sora/HsWOOFmMQ-E.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/BuKtba21qtU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】歌ったりコラボ放送の告知したりする。【#ときのそら生放送 】</h3>
+                            <a href="sora/BuKtba21qtU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ytw2K0sZzP0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】今日も楽しく歌っていこう！！【#ときのそら生放送 】</h3>
+                            <a href="sora/ytw2K0sZzP0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2vNcjO77_No/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】昼間に歌うのだ！！【#ときのそら生放送 】</h3>
+                            <a href="sora/2vNcjO77_No.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2vNcjO77_No/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】昼間に歌うのだ！！【#ときのそら生放送 】</h3>
+                            <a href="sora/2vNcjO77_No.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZQZBu2OXYzU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】アイドルっぽい曲ってどんな感じかな？【#ときのそら生放送/ときのそら 】</h3>
+                            <a href="sora/ZQZBu2OXYzU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZQZBu2OXYzU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】アイドルっぽい曲ってどんな感じかな？【#ときのそら生放送/ときのそら 】</h3>
+                            <a href="sora/ZQZBu2OXYzU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/X5ACXSSmntg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】歌ってみた動画の前に歌ってみよう！【#ときのそら生放送/ときのそら 】</h3>
+                            <a href="sora/X5ACXSSmntg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/X5ACXSSmntg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【Song/歌枠】歌ってみた動画の前に歌ってみよう！【#ときのそら生放送/ときのそら 】</h3>
+                            <a href="sora/X5ACXSSmntg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/a-VVO8LDPuM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠/Sing】ホロライブの曲歌えるかな？【ホロライブ/ときのそら/TokinoSora】</h3>
+                            <a href="sora/a-VVO8LDPuM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-6iPhFVxgQA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【オリ曲初ミリオン】ありがとう歌枠！！【ホロライブ/ときのそら】</h3>
+                            <a href="sora/-6iPhFVxgQA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/xK-lX5UjdbA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】歌ってみたを投稿したことある曲縛り【ホロライブ/ときのそら】</h3>
+                            <a href="sora/xK-lX5UjdbA.html">動画を見る</a>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+
+            <footer>
+                <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+            </footer>
+
+        </body>
+        </html>
+        

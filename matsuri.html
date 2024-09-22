@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="夏色まつりの最新動画と人気動画をチェック！">
+            <meta name="keywords" content="動画, Vtuber, 歌枠, 新着動画, 人気動画, 夏色まつり">
+            <title>夏色まつり</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f9;
+                    color: #333;
+                }
+                header {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                header p {
+                    font-size: 1.2em;
+                    margin: 5px 0 20px 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                .section-title {
+                    font-size: 1.8em;
+                    margin: 20px 0;
+                    border-bottom: 2px solid #ddd;
+                    padding-bottom: 10px;
+                }
+                .video-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                }
+                .video-item {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+                .video-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 15px rgba(148, 142, 142, 0.2);
+                }
+                .video-item img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .video-item h3 {
+                    font-size: 1.2em;
+                    margin: 10px 0;
+                    padding: 0 10px;
+                }
+                .video-item a {
+                    display: block;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: background-color 0.3s;
+                }
+                .video-item a:hover {
+                    background-color: #0056b3;
+                }
+                footer {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+
+            <header>
+                <h1>夏色まつり</h1>
+                <p>最新の動画をチェックしよう！</p>
+            </header>
+
+            <div class="container">
+
+                <!-- 人気動画セクション -->
+                <section>
+                    <h2 class="section-title">人気動画</h2>
+                    <div class="video-list">
+                        <div class="video-item">
+                            <img src="video-thumbnail4.jpg" alt="Video 4 Thumbnail">
+                            <h3>動画タイトル 4</h3>
+                            <a href="子サイトリンク4.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail5.jpg" alt="Video 5 Thumbnail">
+                            <h3>動画タイトル 5</h3>
+                            <a href="子サイトリンク5.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail6.jpg" alt="Video 6 Thumbnail">
+                            <h3>動画タイトル 6</h3>
+                            <a href="子サイトリンク6.html">動画を見る</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 新着動画セクション -->
+                <section>
+                    <h2 class="section-title">新着動画</h2>
+                    <div class="video-list">
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/8nvjHibgA4I/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夜中にアニソン歌うぞいッ♪singing anime songs【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/8nvjHibgA4I.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/xAAIsirmPco/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アニソンうたうぞー！/singing anime songs【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/xAAIsirmPco.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/l_az0NPThvw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】かわいくうたうよ♡【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/l_az0NPThvw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/RS7KqotAwlY/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】歌みたあげたよ！癒し歌枠～【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/RS7KqotAwlY.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/oBR1WJ3D-xg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】雨の日は一緒にいたくなりますよね【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/oBR1WJ3D-xg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/vkhQq7fhbFg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夏だ！祭だ！歌枠だぁ！ / 歌ってみた同時視聴【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/vkhQq7fhbFg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2Ae1MBuuIcM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】8月最初のおうた！夏を乗り越えるぞ～！【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/2Ae1MBuuIcM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/se257gE8M9M/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ねれない人のためのまったり歌枠【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/se257gE8M9M.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/RXGH7TXZSqE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アニソン歌うしかねぇよなぁ！？ / singing anime song【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/RXGH7TXZSqE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-YdULX4T36A/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】愛をこめて歌います♡ / singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/-YdULX4T36A.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Sb5SthN4lPM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【重大告知/歌枠】ホロライブ縛り歌枠！ /  HOLOLIVE SONG SINGING STREAM【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/Sb5SthN4lPM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/blAapIx25ug/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】いろいろ歌う～！ / singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/blAapIx25ug.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/vmTRPtV7YtU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】なんでも歌うからリクエストしてみな！ / singing anime songs KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/vmTRPtV7YtU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/cZxU1znGQZc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【#ホロクリスマス歌枠リレー】クリスマスは冬だけじゃありません！【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/cZxU1znGQZc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/a0Die22aELg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】今年最後のうたわく！！【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/a0Die22aELg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/jgPfb5_Qy3A/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】 歌いたい衝動にかられて / singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/jgPfb5_Qy3A.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/rwDvJ1NUcZQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】コメントで言われた曲を歌いますです！ / Singing Stream【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/rwDvJ1NUcZQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-d7ixtoSn-c/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ただいまのうたわく～【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/-d7ixtoSn-c.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/5y5lurjMrLI/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【バレンタイン】らぶらぶ歌枠♡/Singing KARAKOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/5y5lurjMrLI.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/CWy_fOtgEAY/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】リクエストを歌うなどするッ！ / Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/CWy_fOtgEAY.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/LedeXNGmpwc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】楽しく歌うそれ一番大事♪/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/LedeXNGmpwc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/16gkaojSfZA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】気分上げていきたい歌枠～♪/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/16gkaojSfZA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/x4-nI6Bh0U8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ねこを飼い始めました🐈/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/x4-nI6Bh0U8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Nu3BfKCUhVA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】おうたやさん開店/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/Nu3BfKCUhVA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/U4Coj55PyuE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】バラード縛り【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/U4Coj55PyuE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/e-ybuJCdzSs/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】おうたやさん開店！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/e-ybuJCdzSs.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/anTqL0paWDQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】Singing KARAOKE♪【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/anTqL0paWDQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/KG4uZgC-0rM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】バラード / Ballad only KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/KG4uZgC-0rM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/05mW8CHi8Zk/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】好きなアニソン歌う屋さん～/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/05mW8CHi8Zk.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2oZoUkhZz5Y/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】リハビリで歌うやさんするっ！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/2oZoUkhZz5Y.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/cHSwCzzid6Y/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】久々の歌枠！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/cHSwCzzid6Y.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Cm-LTQhI7YM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】想いを歌にのせて.../Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/Cm-LTQhI7YM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2z7dEtmh8Cg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】浴衣お披露目しながらかわいく歌うッ！！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/2z7dEtmh8Cg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/sHEz7JjgCCI/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】お昼にまったり歌いますッ✨/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/sHEz7JjgCCI.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/xxH2dqlyoM0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】19日からおやすみもらうます～！【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/xxH2dqlyoM0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/6ODUfcUnklE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】お歌の時間だコラァ！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/6ODUfcUnklE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/m-24UjK-Noc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夜中にバラード【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/m-24UjK-Noc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/xIkZzICHQ2Y/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ハッピーハロウィン🎃/Singing  KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/xIkZzICHQ2Y.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/33h1PNbL0ho/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】昭和曲縛りで歌う✨【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/33h1PNbL0ho.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ycscRBMDhbw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アイドル曲をスーパー最強アイドルが歌うッ❤【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/ycscRBMDhbw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/C425ix20yMw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】うた【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/C425ix20yMw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/k9d4o0UK880/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】元気になれる歌枠✨【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/k9d4o0UK880.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/6GWlS05L2D0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 #ホロクリスマス歌枠リレー 】目指せ5曲✨歌います♡/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/6GWlS05L2D0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/HDQFmjDQI0w/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】💞KAWAII Song💞【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/HDQFmjDQI0w.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/n82XjwgrQ54/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】新エフェクターでケロケロ歌う！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/n82XjwgrQ54.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/MkUBPs6xCTQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】バラード【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/MkUBPs6xCTQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/gTddgowqiG8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】歌わせていただきます！！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/gTddgowqiG8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ciyvpCL1Ars/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】恋してくれませんか？/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/ciyvpCL1Ars.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/khp-YGmFn_g/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】おうた【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/khp-YGmFn_g.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/FAR53G8sptM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ホロライブ曲限定✨/hololive only【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/FAR53G8sptM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/seAv-Qo5Szg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【朝歌枠】朝から元気がでる歌枠☀【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/seAv-Qo5Szg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/7thgmRICLjU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】久しぶりのおうた🎵【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/7thgmRICLjU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/yay60Ahkhhc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】今宵はお歌を歌います！/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/yay60Ahkhhc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/lL19VebEPEw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】リハビリおうた屋さん/Singing KARAOKE【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/lL19VebEPEw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/pz3M30Z5Hpw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】バラード【ホロライブ/夏色まつり】</h3>
+                            <a href="matsuri/pz3M30Z5Hpw.html">動画を見る</a>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+
+            <footer>
+                <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+            </footer>
+
+        </body>
+        </html>
+        

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="大神ミオの最新動画と人気動画をチェック！">
+            <meta name="keywords" content="動画, Vtuber, 歌枠, 新着動画, 人気動画, 大神ミオ">
+            <title>大神ミオ</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f9;
+                    color: #333;
+                }
+                header {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                header p {
+                    font-size: 1.2em;
+                    margin: 5px 0 20px 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                .section-title {
+                    font-size: 1.8em;
+                    margin: 20px 0;
+                    border-bottom: 2px solid #ddd;
+                    padding-bottom: 10px;
+                }
+                .video-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                }
+                .video-item {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+                .video-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 15px rgba(148, 142, 142, 0.2);
+                }
+                .video-item img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .video-item h3 {
+                    font-size: 1.2em;
+                    margin: 10px 0;
+                    padding: 0 10px;
+                }
+                .video-item a {
+                    display: block;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: background-color 0.3s;
+                }
+                .video-item a:hover {
+                    background-color: #0056b3;
+                }
+                footer {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+
+            <header>
+                <h1>大神ミオ</h1>
+                <p>最新の動画をチェックしよう！</p>
+            </header>
+
+            <div class="container">
+
+                <!-- 人気動画セクション -->
+                <section>
+                    <h2 class="section-title">人気動画</h2>
+                    <div class="video-list">
+                        <div class="video-item">
+                            <img src="video-thumbnail4.jpg" alt="Video 4 Thumbnail">
+                            <h3>動画タイトル 4</h3>
+                            <a href="子サイトリンク4.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail5.jpg" alt="Video 5 Thumbnail">
+                            <h3>動画タイトル 5</h3>
+                            <a href="子サイトリンク5.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail6.jpg" alt="Video 6 Thumbnail">
+                            <h3>動画タイトル 6</h3>
+                            <a href="子サイトリンク6.html">動画を見る</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 新着動画セクション -->
+                <section>
+                    <h2 class="section-title">新着動画</h2>
+                    <div class="video-list">
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/900hRooutsY/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】有名アニソンをたくさん歌う！【Anime song】</h3>
+                            <a href="mio/900hRooutsY.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/x0BQoRca0wg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】元気になる歌うたいたい！！！【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/x0BQoRca0wg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/feyTLBCWF5k/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】バラードも歌いたい！歌いたい！！！【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/feyTLBCWF5k.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/gpX76coxzr4/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夏の歌をうたう！歌枠強化中～♪【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/gpX76coxzr4.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/wO5NmEJYKzg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】歌のモチベが高まっている【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/wO5NmEJYKzg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Tm7Bf7xcT-k/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>寝る前のバラード歌枠  ～たまにウクレレもあるかも～</h3>
+                            <a href="mio/Tm7Bf7xcT-k.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-eGH1V5xRnc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夜に聞くと幸せになれるかもしれない歌わくうううう</h3>
+                            <a href="mio/-eGH1V5xRnc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZQ0O3o9hoY0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】リハビリだーーーー！！！！！！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/ZQ0O3o9hoY0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZlefjbcT758/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【うちうち、うちだよ】歌枠【大神ミオだよ】</h3>
+                            <a href="mio/ZlefjbcT758.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ugfXI8Xt8Xw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】帰宅直後、マイク割らない、やさしく歌う【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/ugfXI8Xt8Xw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/tqQp2ipsqCI/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【ミオサンタ】深夜のしっとりバラード歌枠【大神ミオ / ホロライブ】</h3>
+                            <a href="mio/tqQp2ipsqCI.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/2MFKt0aOSEI/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 #ホロクリスマス歌枠リレー 】トップバッター！歌枠リレーはっじまっるよー！【大神ミオ / ホロライブ】</h3>
+                            <a href="mio/2MFKt0aOSEI.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/TviyO9GCfKQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【急に】大神ミオ、年納め歌枠！【歌います】</h3>
+                            <a href="mio/TviyO9GCfKQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/eRVWPp15ctg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】懐かしい曲限定！有名曲をうたいまくる【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/eRVWPp15ctg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/tgw3Merev9I/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】深夜にしっとりまったり〜バラード歌う！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/tgw3Merev9I.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/OaJcRd7ve10/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ホロメンのオリジナル曲縛り！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/OaJcRd7ve10.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/g_MZuK31Ano/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】歌いたくなった時が歌い時！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/g_MZuK31Ano.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ukHx7CDoJ9M/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】懐メロ縛り！懐かしい名曲に酔いしれる〜✨【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/ukHx7CDoJ9M.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/gRxv-c0hi_U/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】久しぶり・・！リハビリ歌枠〜〜【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/gRxv-c0hi_U.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/gRxv-c0hi_U/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】久しぶり・・！リハビリ歌枠〜〜【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/gRxv-c0hi_U.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/b3ongEe-Yn8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】うたう〜〜〜【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/b3ongEe-Yn8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/b3ongEe-Yn8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】うたう〜〜〜【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/b3ongEe-Yn8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/tGsrMungYtQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】バラード多め！声だしてくー！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/tGsrMungYtQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/9tijakJfqh0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【１００万人耐久】一緒に迎えたい、１００万人！！！！【歌枠】</h3>
+                            <a href="mio/9tijakJfqh0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/rnVfwYuK8sw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【ただいま！】復活の歌枠！！！おやすみありがとう！【大神ミオ/ホロライブ】</h3>
+                            <a href="mio/rnVfwYuK8sw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/VPZ_gG_a3LA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夏っぽい歌を歌いまくるぞ！【大神ミオ/ホロライブ】</h3>
+                            <a href="mio/VPZ_gG_a3LA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/_7xam-tZg5g/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】エコー復活！！！（たぶん）夜だしバラード歌う！【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/_7xam-tZg5g.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/CCypSGKM8CY/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アニソンうたうぞ！！！！！！！！！！！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/CCypSGKM8CY.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/wgN36Zc19qQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】懐メロを歌いたい～～～！！！！！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/wgN36Zc19qQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/hV7o5s8LvLU/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アニソン多めで歌う！なんだか歌いたい気分♪【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/hV7o5s8LvLU.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/MzB9yG1qSsQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】しっとりバラードを歌ってしんみりするよ〜【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/MzB9yG1qSsQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/eaWnyNNqtZM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】１０回歌うと１こ告知ができる歌枠【重大告知】</h3>
+                            <a href="mio/eaWnyNNqtZM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/lYXEiQLshgc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】夕方に歌うは、好きな歌。【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/lYXEiQLshgc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/tQZv1zy_UO0/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】クリスマス歌枠リレーはっじまっるよ～！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/tQZv1zy_UO0.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/fON5Ecw0BrM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【#ホロクリスマス歌枠リレー】19:40～はあちゃまの代わりに歌います！【大神ミオ】</h3>
+                            <a href="mio/fON5Ecw0BrM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/8vR8y5ck6Tg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【#ホロクリスマス歌枠リレー 】23:40～ラスト！最後まで一緒に盛り上がろう～！【大神ミオ】</h3>
+                            <a href="mio/8vR8y5ck6Tg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/MCOQ_x-d5xg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】新年初うた！歌っちゃうみょーん【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/MCOQ_x-d5xg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/_oHdyqru-5c/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】お久しぶりです【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/_oHdyqru-5c.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Q98czd8gQ6Q/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】急にあたたかくなったため、春っぽい歌を【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/Q98czd8gQ6Q.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/my5Xgv9VN60/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ゲリラカラオケ枠【 ホロライブ / 大神ミオ 】</h3>
+                            <a href="mio/my5Xgv9VN60.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ZiEMerqpeeE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】歌ってたのしー！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/ZiEMerqpeeE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Axkb_6qWCUQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 ゲリラ歌枠】いえ～～～～～～～い！歌う！【ホロライブ/大神ミオ】</h3>
+                            <a href="mio/Axkb_6qWCUQ.html">動画を見る</a>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+
+            <footer>
+                <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+            </footer>
+
+        </body>
+        </html>
+        

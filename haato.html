@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="赤井はあとの最新動画と人気動画をチェック！">
+            <meta name="keywords" content="動画, Vtuber, 歌枠, 新着動画, 人気動画, 赤井はあと">
+            <title>赤井はあと</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f9;
+                    color: #333;
+                }
+                header {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                header p {
+                    font-size: 1.2em;
+                    margin: 5px 0 20px 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                .section-title {
+                    font-size: 1.8em;
+                    margin: 20px 0;
+                    border-bottom: 2px solid #ddd;
+                    padding-bottom: 10px;
+                }
+                .video-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                }
+                .video-item {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+                .video-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 15px rgba(148, 142, 142, 0.2);
+                }
+                .video-item img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+                .video-item h3 {
+                    font-size: 1.2em;
+                    margin: 10px 0;
+                    padding: 0 10px;
+                }
+                .video-item a {
+                    display: block;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: background-color 0.3s;
+                }
+                .video-item a:hover {
+                    background-color: #0056b3;
+                }
+                footer {
+                    background-color: #282c34;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+
+            <header>
+                <h1>赤井はあと</h1>
+                <p>最新の動画をチェックしよう！</p>
+            </header>
+
+            <div class="container">
+
+                <!-- 人気動画セクション -->
+                <section>
+                    <h2 class="section-title">人気動画</h2>
+                    <div class="video-list">
+                        <div class="video-item">
+                            <img src="video-thumbnail4.jpg" alt="Video 4 Thumbnail">
+                            <h3>動画タイトル 4</h3>
+                            <a href="子サイトリンク4.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail5.jpg" alt="Video 5 Thumbnail">
+                            <h3>動画タイトル 5</h3>
+                            <a href="子サイトリンク5.html">動画を見る</a>
+                        </div>
+                        <div class="video-item">
+                            <img src="video-thumbnail6.jpg" alt="Video 6 Thumbnail">
+                            <h3>動画タイトル 6</h3>
+                            <a href="子サイトリンク6.html">動画を見る</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 新着動画セクション -->
+                <section>
+                    <h2 class="section-title">新着動画</h2>
+                    <div class="video-list">
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/ICim2O8u2ms/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【#from1st】一期生歌枠リレ～！Singing♪【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/ICim2O8u2ms.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Vwhvi3oA2k8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【ヘリウムで!?】地獄の歌枠【HELLSING】</h3>
+                            <a href="haato/Vwhvi3oA2k8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/rx2mufVoRi4/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】HALLOWEEN PARTY NIGHT♪【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/rx2mufVoRi4.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/FRXyQsOQC50/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 #ホロクリスマス歌枠リレー 】はあちゃまだぜ！X&#39;MAS HAACHAMA♪【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/FRXyQsOQC50.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Ru0v6YfXNuw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アベ・チャママ 【SINGCHAMA】</h3>
+                            <a href="haato/Ru0v6YfXNuw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/5hgD5tdSjGs/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アイドルソング縛り♪きゃわわ～～～！#SINGCHAMA【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/5hgD5tdSjGs.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/H5o643bA1sM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ジブリ縛り！トトロいるもももん！！！#SINGCHAMA【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/H5o643bA1sM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/MMJmRtsEFjg/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】あっは～ん！色気全開でいくわよ・・・♥【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/MMJmRtsEFjg.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/rraBhhq2VKA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】センパイ！おうたでたくさん癒されてね💓【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/rraBhhq2VKA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/tXZzaZqs0FQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】新学期・・・とっても刺激的でしたわ♪【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/tXZzaZqs0FQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/y8dbOECb_2A/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】大人の色気むんむんで歌いますわよ～♪【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/y8dbOECb_2A.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/KGp0eAmDDbM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】深夜のすやすや歌💤KARAOKE FOR SLEEP♪【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/KGp0eAmDDbM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/-EoILnAFKl8/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】絶対に寝かしつける配信。～永眠率99%～【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/-EoILnAFKl8.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/eRN-kcZEGAY/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ゴラァ！！！懐メロで満足できねえ奴いるぅ？いねえよなぁ！！【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/eRN-kcZEGAY.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/8DsBzGoRrmQ/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】ワクチン接種からの帰還！【ホロライブ/はあちゃま】</h3>
+                            <a href="haato/8DsBzGoRrmQ.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/KpgnAUkt0VI/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 歌枠 】みんなで140万人見届けた〜い！【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/KpgnAUkt0VI.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/YHsKnajBKHk/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【歌枠】アニソン！虫歯の激痛やばめ！がんばる！！！【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/YHsKnajBKHk.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/wfJCVWoSWQM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】第一回！ちゃまちゃま★れぼりゅ〜しょん！ボカロ多め！#1【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/wfJCVWoSWQM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/wfJCVWoSWQM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】第一回！ちゃまちゃま★れぼりゅ〜しょん！ボカロ多め！#1【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/wfJCVWoSWQM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/7BxeUzWJkwA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】すーぱーぴちぴち！最強アイドルの歌きいて〜〜〜！#2【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/7BxeUzWJkwA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/7BxeUzWJkwA/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】すーぱーぴちぴち！最強アイドルの歌きいて〜〜〜！#2【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/7BxeUzWJkwA.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/1TYx38CSGsc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】はあちゃまの歌にヒヨってる奴いる〜〜〜？#3 【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/1TYx38CSGsc.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Hh09jB3eOkw/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】ちょっとセンチメンタルな秋🍁#4【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/Hh09jB3eOkw.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/_bTfp8Xi-XM/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【火夜歌枠】ばぶちゃまのお遊戯会だぞ！🍼 #5【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/_bTfp8Xi-XM.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/RRnNWQENN5M/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 火夜歌枠 】色気たっぷりな和風曲はいかが？👘#6【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/RRnNWQENN5M.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/QYXPtehv_1g/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 火夜歌枠 】しっとりバラードな気分...🌙#7【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/QYXPtehv_1g.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/Skp5C4p2ZHE/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 火夜歌枠 】いつも、いつでも元気炸裂！💣#8【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/Skp5C4p2ZHE.html">動画を見る</a>
+                        </div>
+                        
+                        <div class="video-item">
+                            <img src="https://i.ytimg.com/vi/gyL4nq53AHc/hqdefault.jpg" alt="Video Thumbnail">
+                            <h3>【 火夜歌枠 】2023年！初のおうた！#9【ホロライブ/赤井はあと】</h3>
+                            <a href="haato/gyL4nq53AHc.html">動画を見る</a>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+
+            <footer>
+                <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+            </footer>
+
+        </body>
+        </html>
+        
