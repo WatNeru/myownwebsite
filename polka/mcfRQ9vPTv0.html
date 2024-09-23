@@ -1,0 +1,441 @@
+
+        <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="尾丸ポルカの歌枠動画とそのセットリストを紹介。人気VTuberの歌唱力をお楽しみください。">
+            <title>Vtuber歌枠 | セットリスト | ホロライブ | VTuber | 【歌枠/Singing】YAAAAAY✌ほんとに久々ああああ💖うたうよ✨✨【尾丸ポルカ/ホロライブ】| 尾丸ポルカ |</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                :root {
+                    --primary-color: #e74c3c;
+                    --secondary-color: #3498db;
+                    --background-color: #ecf0f1;
+                    --text-color: #2c3e50;
+                    --heading-color: #34495e;
+                    --accent-color: #f39c12;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    font-family: 'Noto Sans JP', sans-serif;
+                    background-color: var(--background-color);
+                    color: var(--text-color);
+                    line-height: 1.6;
+                }
+                
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                header {
+                    background-color: var(--primary-color);
+                    color: white;
+                    text-align: center;
+                    padding: 2rem 0;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                }
+                
+                h2 {
+                    color: var(--heading-color);
+                    margin: 2rem 0 1rem;
+                    text-align: center;
+                }
+                
+                .video-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                    background-color: #000;
+                    margin-bottom: 2rem;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .setlist-container {
+                    background-color: white;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                }
+                
+                .setlist-table {
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    margin-top: 1rem;
+                }
+                
+                .setlist-table th, .setlist-table td {
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+                
+                .setlist-table th {
+                    background-color: var(--secondary-color);
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                
+                .setlist-table tr:last-child td {
+                    border-bottom: none;
+                }
+                
+                .setlist-table tr:hover {
+                    background-color: #f5f5f5;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .setlist-table td a {
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                
+                .setlist-table td a:hover {
+                    color: var(--accent-color);
+                }
+                
+                .ad-container {
+                    margin: 2rem 0;
+                    text-align: center;
+                }
+                
+                .ad-container iframe {
+                    max-width: 100%;
+                    border: none;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                
+                footer {
+                    background-color: var(--heading-color);
+                    color: white;
+                    text-align: center;
+                    padding: 1rem 0;
+                    margin-top: 2rem;
+                }
+                
+                .social-links {
+                    margin-top: 1rem;
+                }
+                
+                .social-links a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 1.2rem;
+                }
+                
+                @media (max-width: 768px) {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.8rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 10px;
+                    }
+                    
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .setlist-table th, .setlist-table td {
+                        padding: 0.6rem;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                /* ダークモードサポート */
+                @media (prefers-color-scheme: dark) {
+                    :root {
+                        --background-color: #2c3e50;
+                        --text-color: #ecf0f1;
+                        --heading-color: #3498db;
+                    }
+                    
+                    .setlist-container {
+                        background-color: #34495e;
+                    }
+                    
+                    .setlist-table tr:hover {
+                        background-color: #2c3e50;
+                    }
+                }
+
+                /* アニメーション */
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                .fade-in {
+                    animation: fadeIn 1s ease-out;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <header class="fade-in">
+                    <h1>歌枠セットリスト</h1>
+                    <p>動画タイトル: 【歌枠/Singing】YAAAAAY✌ほんとに久々ああああ💖うたうよ✨✨【尾丸ポルカ/ホロライブ】</p>
+                </header>
+
+                <main>
+                    <section class="fade-in">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mcfRQ9vPTv0" 
+                            title="Vtuberの歌枠動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="setlist-container fade-in">
+                        <h2>セットリスト</h2>
+                        
+                        <table class="setlist-table">
+                            <thead>
+                                <tr>
+                                    <th>タイムスタンプ</th>
+                                    <th>曲名</th>
+                                    <th>アーティスト</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=60" target="_blank">01:00</a></td>
+                                    <td>Butter-Fly</td>
+                                    <td>Butter-Fly</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=255" target="_blank">04:15</a></td>
+                                    <td>Butter-Fly</td>
+                                    <td>Butter-Fly</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=342" target="_blank">05:42</a></td>
+                                    <td>Butter-Fly</td>
+                                    <td>Butter-Fly</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=596" target="_blank">09:56</a></td>
+                                    <td>None</td>
+                                    <td>None</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=873" target="_blank">14:33</a></td>
+                                    <td>めざせポケモンマスター</td>
+                                    <td>めざせポケモンマスター</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=1206" target="_blank">20:06</a></td>
+                                    <td>KICKBACK</td>
+                                    <td>KICKBACK</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=1426" target="_blank">23:46</a></td>
+                                    <td>LOSER</td>
+                                    <td>LOSER</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=1698" target="_blank">28:18</a></td>
+                                    <td>感電</td>
+                                    <td>感電</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=2030" target="_blank">33:50</a></td>
+                                    <td>ロキ</td>
+                                    <td>ロキ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=2294" target="_blank">38:14</a></td>
+                                    <td>ダーリンダンス</td>
+                                    <td>ダーリンダンス</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=2529" target="_blank">42:09</a></td>
+                                    <td>ベノム</td>
+                                    <td>ベノム</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=2742" target="_blank">45:42</a></td>
+                                    <td>爆笑</td>
+                                    <td>爆笑</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=2948" target="_blank">49:08</a></td>
+                                    <td>ヒバナ</td>
+                                    <td>ヒバナ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=3252" target="_blank">54:12</a></td>
+                                    <td>トンデモワンダーズ</td>
+                                    <td>トンデモワンダーズ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=3537" target="_blank">58:57</a></td>
+                                    <td>Mr.Moonlight〜愛のビッグバンド〜</td>
+                                    <td>Mr.Moonlight〜愛のビッグバンド〜</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=3901" target="_blank">01:05:01</a></td>
+                                    <td>射手座午後九時Don'tdelate</td>
+                                    <td>射手座午後九時Don'tdelate</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=4259" target="_blank">01:10:59</a></td>
+                                    <td>星間飛行</td>
+                                    <td>星間飛行</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=4498" target="_blank">01:14:58</a></td>
+                                    <td>ライオン</td>
+                                    <td>ライオン</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=4929" target="_blank">01:22:09</a></td>
+                                    <td>(練習)水の星へ愛をこめて</td>
+                                    <td>(練習)水の星へ愛をこめて</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=5145" target="_blank">01:25:45</a></td>
+                                    <td>才悩人応援歌</td>
+                                    <td>才悩人応援歌</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=5401" target="_blank">01:30:01</a></td>
+                                    <td>車輪の唄</td>
+                                    <td>車輪の唄</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=5785" target="_blank">01:36:25</a></td>
+                                    <td>ダイアモンドクレバス</td>
+                                    <td>ダイアモンドクレバス</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=6125" target="_blank">01:42:05</a></td>
+                                    <td>妄想感傷代償連盟</td>
+                                    <td>妄想感傷代償連盟</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=6380" target="_blank">01:46:20</a></td>
+                                    <td>フォニイ</td>
+                                    <td>フォニイ</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=6572" target="_blank">01:49:32</a></td>
+                                    <td>BeautifulWorld</td>
+                                    <td>BeautifulWorld</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><a href="https://youtu.be/mcfRQ9vPTv0?t=6883" target="_blank">01:54:43</a></td>
+                                    <td>屋根裏のエピローグ</td>
+                                    <td>屋根裏のエピローグ</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <div class="ad-container fade-in">
+                        <iframe src="https://example.com/your-ad" title="広告" width="728" height="90"></iframe>
+                    </div>
+                </main>
+
+                <footer class="fade-in">
+                    <p>Images and videos quoted from &copy;2016 COVER Corp.</p>
+                    <div class="social-links">
+                        <a href="https://v-songs.com/contact.html" aria-label="お問い合わせ">お問い合わせ</a>
+                        <a href="https://v-songs.com/privacy.html" aria-label="プライバシーポリシー">プライバシーポリシー</a>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('fade-in');
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('section, .ad-container').forEach((el) => {
+                        observer.observe(el);
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
